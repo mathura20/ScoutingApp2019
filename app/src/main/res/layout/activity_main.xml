@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PreMatchActivity">
+
+    <TextView
+        android:id="@+id/appTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="59dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/app_title"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/teamNumber"
+        android:layout_width="100dp"
+        android:layout_height="21dp"
+        android:layout_marginTop="56dp"
+        android:text="@string/team_number_prompt"
+        app:layout_constraintStart_toStartOf="@+id/appTitle"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle" />
+
+    <EditText
+        android:id="@+id/enterTeamNumber"
+        android:layout_width="190dp"
+        android:layout_height="49dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginLeft="48dp"
+        android:layout_marginTop="28dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintStart_toEndOf="@+id/teamNumber"
+        app:layout_constraintTop_toBottomOf="@+id/appTitle" />
+
+    <TextView
+        android:id="@+id/matchNumber"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="84dp"
+        android:text="@string/match_number_prompt"
+        app:layout_constraintEnd_toEndOf="@+id/teamNumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/teamNumber"
+        app:layout_constraintTop_toBottomOf="@+id/teamNumber" />
+
+    <EditText
+        android:id="@+id/enterMatchNumber"
+        android:layout_width="190dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="60dp"
+        android:ems="10"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="@+id/enterTeamNumber"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/enterTeamNumber"
+        app:layout_constraintTop_toBottomOf="@+id/enterTeamNumber" />
+
+    <TextView
+        android:id="@+id/scoutNumber"
+        android:layout_width="99dp"
+        android:layout_height="19dp"
+        android:layout_marginTop="92dp"
+        android:text="@string/scouter_name"
+        app:layout_constraintEnd_toEndOf="@+id/matchNumber"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/matchNumber"
+        app:layout_constraintTop_toBottomOf="@+id/matchNumber" />
+
+    <EditText
+        android:id="@+id/enterScoutName"
+        android:layout_width="192dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="72dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="@string/scouter_name_prompt"
+        app:layout_constraintEnd_toEndOf="@+id/enterMatchNumber"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/enterMatchNumber"
+        app:layout_constraintTop_toBottomOf="@+id/enterMatchNumber" />
+
+    <Button
+        android:id="@+id/screenOneEnterButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="116dp"
+        android:text="@string/screen_one_button_send"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/scoutNumber" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

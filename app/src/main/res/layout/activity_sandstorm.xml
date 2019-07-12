@@ -1,0 +1,295 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SandstormActivity">
+
+    <TextView
+        android:id="@+id/sandstormTitle"
+        android:layout_width="197dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="36dp"
+        android:text="@string/sandstorm_title"
+        android:textSize="24sp"
+        app:fontFamily="sans-serif-medium"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup2"
+        android:layout_width="184dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sandstormTitle">
+
+        <RadioButton
+            android:id="@+id/radioButton7"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton8"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+    <RadioGroup
+        android:layout_width="167dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        app:layout_constraintBottom_toBottomOf="@+id/radioGroup2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/radioGroup2">
+
+        <RadioButton
+            android:id="@+id/radioButton9"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+
+        <RadioButton
+            android:id="@+id/radioButton10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="RadioButton" />
+    </RadioGroup>
+
+    <TextView
+        android:id="@+id/sCCargoPrompt"
+        android:layout_width="185dp"
+        android:layout_height="25dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/sCCargoPrompt"
+        app:layout_constraintEnd_toEndOf="@+id/radioGroup2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/radioGroup2"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup2" />
+
+    <TextView
+        android:id="@+id/sHCargoPrompt"
+        android:layout_width="185dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="12dp"
+        android:text="@string/sHCargoPrompt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sCCargoPrompt" />
+
+    <TextView
+        android:id="@+id/sCRocket2Prompt"
+        android:layout_width="185dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/sCRocket2Prompt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sCRocket1Prompt" />
+
+    <TextView
+        android:id="@+id/sCRocket3Prompt"
+        android:layout_width="185dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/sCRocket3Prompt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sCRocket2Prompt" />
+
+    <TextView
+        android:id="@+id/sHRocket1Prompt"
+        android:layout_width="185dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/sHRocket1Prompt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sCRocket3Prompt" />
+
+    <TextView
+        android:id="@+id/sCRocket1Prompt"
+        android:layout_width="185dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/sCRocket1Prompt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sHCargoPrompt" />
+
+    <TextView
+        android:id="@+id/sHRocket3Prompt"
+        android:layout_width="185dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/sHRocket3Prompt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sHRocket2Prompt" />
+
+    <TextView
+        android:id="@+id/sCPickedPrompt"
+        android:layout_width="185dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/sCPickedPrompt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sHRocket3Prompt" />
+
+    <TextView
+        android:id="@+id/sHPickedPrompt"
+        android:layout_width="185dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/sHPickedPrompt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sCPickedPrompt" />
+
+    <TextView
+        android:id="@+id/sHRocket2Prompt"
+        android:layout_width="185dp"
+        android:layout_height="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/sHRocket2Prompt"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sHRocket1Prompt" />
+
+    <com.example.aayushscoutingapp.Counter
+        android:id="@+id/r2Cargo"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="288dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/sCCargoPrompt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.aayushscoutingapp.Counter
+        android:id="@+id/csHatches"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="200dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/sCCargoPrompt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.aayushscoutingapp.Counter
+        android:id="@+id/r3Cargo"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="320dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/sCCargoPrompt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.aayushscoutingapp.Counter
+        android:id="@+id/r2Hatches"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="408dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/sCCargoPrompt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.aayushscoutingapp.Counter
+        android:id="@+id/r3Hatches"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="440dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/sCCargoPrompt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.aayushscoutingapp.Counter
+        android:id="@+id/r1Hatches"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="376dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/sCCargoPrompt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.aayushscoutingapp.Counter
+        android:id="@+id/cPicked"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="496dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/sCCargoPrompt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.aayushscoutingapp.Counter
+        android:id="@+id/hPicked"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="528dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/sCCargoPrompt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.aayushscoutingapp.Counter
+        android:id="@+id/csBalls"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="163dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/sCCargoPrompt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <com.example.aayushscoutingapp.Counter
+        android:id="@+id/r1Cargo"
+        android:layout_width="169dp"
+        android:layout_height="27dp"
+        android:layout_marginTop="256dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.512"
+        app:layout_constraintStart_toEndOf="@+id/sCCargoPrompt"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/progressButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Progress"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/sHPickedPrompt" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

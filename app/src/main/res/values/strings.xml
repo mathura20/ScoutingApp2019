@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Aayush Scouting App</string>
+    <string name="app_title">Deep Space Match Scouting App</string>
+    <string name="team_number_prompt">Team Number:</string>
+    <string name="match_number_prompt">Match Number:</string>
+    <string name="scouter_name_prompt">Enter Name Here:</string>
+    <string name="scouter_name">Scouter Name:</string>
+    <string name="screen_one_button_send">Enter</string>
+    <string name="title_activity_sandstorm">SandstormActivity</string>
+    <string name="sandstorm_title">Sandstorm Mode</string>
+    <string name="sHCargoPrompt">Cargo Ship Hatches</string>
+    <string name="sCCargoPrompt">Cargo Ship Balls</string>
+    <string name="sCRocket1Prompt">Rocket 1 Cargo</string>
+    <string name="sCRocket2Prompt">Rocket 2 Cargo</string>
+    <string name="sCRocket3Prompt">Rocket 3 Cargo</string>
+    <string name="sHRocket1Prompt">Rocket 1 Hatches</string>
+    <string name="sHRocket2Prompt">Rocket 2 Hatches</string>
+    <string name="sHRocket3Prompt">Rocket 3 Hatches</string>
+    <string name="sHPickedPrompt">Hatches Picked Up</string>
+    <string name="sCPickedPrompt">Cargo Picked Up</string>
+    <string name="title_activity_teleop">TeleopActivity</string>
+</resources>
