@@ -10,7 +10,7 @@ import android.widget.EditText;
 import android.widget.TextView;
 
 public class PreMatchActivity extends AppCompatActivity {
-    
+
     public EditText teamNumber;
     public EditText matchNumber;
     public EditText scoutName;
