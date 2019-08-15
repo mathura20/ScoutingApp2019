@@ -1,35 +1,54 @@
 package com.example.aayushscoutingapp;
 
-public class Cycle {
+import java.util.ArrayList;
 
-    private int cycleID;
-    public enum GameObject {HATCH, CARGO}
-    public enum PickupSpot {GROUND, LOADER}
-    public enum ScoreLocation {
-        FRONT_CARGO, SIDE_CARGO, ROCKET_ONE, ROCKET_TWO, ROCKET_THREE
+public class Cycle extends Object {
+
+    private int cycleId;
+    private double time;
+    private boolean gamepieceScored = false;
+
+    private enum GamePiece {
+        HATCH, CARGO
     }
 
-    boolean gamePieceScored = false;
-    private double time;
+    private enum PickupForm{
+        GROUND, LOADER
+    }
 
-    private GameObject gameObject;
-    private PickupSpot pickupSpot;
+    private enum ScoreLocation{
+        FRONT_CARGO, SIDE_CARGO, LOW_ROCKET, MID_ROCKET, HIGH_ROCKET
+    }
+
+    private GamePiece gamePiece;
+    private PickupForm pickupForm;
     private ScoreLocation scoreLocation;
 
-    public Cycle (GameObject object, PickupSpot pickup) {
-        this.gameObject = object;
-        this.pickupSpot = pickup;
+    ArrayList<Object> output = new ArrayList<Object>();
+
+
+    public Cycle() {
+        this.cycleId = cycleId;
     }
 
-    public void setTime(double time) {
-        this.time = time;
+    public void setTime(double in) {
+        this.time = in;
     }
 
-    public void scoreGamePiece() {
-        gamePieceScored = true;
+    public void setScoreStatus(boolean in) {
+        gamepieceScored = in;
     }
 
-    public void setScoreLocation(ScoreLocation location) {
-        this.scoreLocation = location;
+    public void setGamePiece(GamePiece s) {
+        gamePiece = s;
     }
+
+    public void setPickupForm(PickupForm s) {
+        pickupForm = s;
+    }
+
+    public void setScoreLocation (ScoreLocation s) {
+        scoreLocation = s;
+    }
+
 }
