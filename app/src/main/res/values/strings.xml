@@ -19,4 +19,14 @@
     <string name="sHPickedPrompt">Hatches Picked Up</string>
     <string name="sCPickedPrompt">Cargo Picked Up</string>
     <string name="title_activity_teleop">TeleopActivity</string>
+    <string name="THatchPickup">Hatch</string>
+    <string name="TCargoPickup">Cargo</string>
+    <string name="TGroundPickup">Ground</string>
+    <string name="TFeederPickup">Feeder</string>
+    <string name="TCargoFront">Front Cargo</string>
+    <string name="TSideCargo">Side Cargo</string>
+    <string name="TRocket1">Rocket First Level</string>
+    <string name="TRocket2">Rocket Second Level</string>
+    <string name="TRocket3">Rocket Third Level</string>
+    <string name="TDropped">TDropped</string>
 </resources>
